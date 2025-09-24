@@ -5,8 +5,10 @@ export interface PACKAGETYPE {
   days: number;
   nights: number;
   Overview: string[] | undefined;
+  Highlight?: string[];    
+
   Highlights?: string[] | undefined;
-  highlightsImages?: HighlightImage[]; 
+  highlightsImages?: HighlightImage[];
   Inclusion: string[] | undefined;
   Exclusion: string[] | undefined;
   Itinerary?: Itinerary[] | undefined;
