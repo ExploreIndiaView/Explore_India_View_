@@ -8,7 +8,7 @@ export interface PACKAGETYPE {
   Highlights?: string[] | undefined;
   Inclusion: string[] | undefined;
   Exclusion: string[] | undefined;
-  Itinerary: Itinerary[] | undefined;
+  Itinerary?: Itinerary[] | undefined;
   FAQs: Itinerary[] | undefined;
   Price?: number;
 }
