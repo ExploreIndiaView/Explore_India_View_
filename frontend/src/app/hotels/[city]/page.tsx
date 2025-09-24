@@ -16,7 +16,7 @@ function City() {
   return (
     hotelData && (
       <>
-        <Landing IMAGES={HOTELSDATA.images} />
+        {/* <Landing IMAGES={HOTELSDATA.images} /> */}
         <div className="p-7">
           <h1 className="text-3xl font-bold text-center font-serif my-5">
             {city} Hotels

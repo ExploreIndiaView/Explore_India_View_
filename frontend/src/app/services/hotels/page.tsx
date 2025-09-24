@@ -37,7 +37,7 @@ function Hotels() {
   return (
     <>
       {/* Landing Section */}
-      <Landing IMAGES={HOTELSDATA.images} />
+      {/* <Landing IMAGES={HOTELSDATA.images} /> */}
 
       {/* Header */}
       <div className="p-5">

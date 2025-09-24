@@ -18,7 +18,7 @@ function Train() {
   return (
     <>
       {/* Landing Section */}
-      <Landing IMAGES={RAILWAYIMAGES} />
+      {/* <Landing IMAGES={RAILWAYIMAGES} /> */}
 
       {/* Header */}
       <div className="p-5">
