@@ -74,7 +74,7 @@
 //   if (!selectedService) {
 //     return <div className="text-center py-16">Service not found.</div>;
 //   }
-  
+
 //   // Sanitize the HTML content to prevent XSS attacks
 //   const sanitizedContent = () => {
 //     return { __html: DOMPurify.sanitize(selectedService.Overview ?? "") };
@@ -222,7 +222,7 @@ function ServicesPage() {
                   </Button>
                 </Card>
               </DialogTrigger>
-              
+
               {/* Detailed view in a modal */}
               {selectedService && selectedService.__id === service.__id && (
                 <DialogContent className="max-w-4xl p-0">
@@ -232,7 +232,7 @@ function ServicesPage() {
 
                   <div className="w-full h-[50vh] relative">
                     <Carousel
-                      plugins={[Autoplay({ delay: 3000, loop: true })]}
+                      plugins={[Autoplay({ delay: 3000 })]}
                       className="w-full h-full"
                     >
                       <CarouselContent className="h-full">
@@ -261,7 +261,7 @@ function ServicesPage() {
                       <CarouselNext className="absolute right-4 z-20" />
                     </Carousel>
                   </div>
-                  
+
                   <div className="p-6 overflow-y-auto max-h-[40vh]">
                     <div
                       className="text-sm font-medium text-gray-500 text-justify"
