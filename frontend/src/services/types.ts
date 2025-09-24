@@ -5,10 +5,11 @@ export interface PACKAGETYPE {
   days: number;
   nights: number;
   Overview: string[] | undefined;
-  Highlight?: string[];    
-  duration?: string; 
+  Highlight?: string[];
+  duration?: string;
   Highlights?: string[] | undefined;
   highlightsImages?: HighlightImage[];
+  maxPeople?: number; 
   Inclusion: string[] | undefined;
   Exclusion: string[] | undefined;
   Itinerary?: Itinerary[] | undefined;
