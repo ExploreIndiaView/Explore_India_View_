@@ -9,7 +9,8 @@ export interface PACKAGETYPE {
   duration?: string;
   Highlights?: string[] | undefined;
   highlightsImages?: HighlightImage[];
-  minAge?: number; 
+  minAge?: number;
+  tourType?: string; 
   maxPeople?: number;
   Inclusion: string[] | undefined;
   Exclusion: string[] | undefined;
