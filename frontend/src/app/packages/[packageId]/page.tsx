@@ -872,7 +872,7 @@
 //             <RajasthanMap />
 //         </div>
 //       </div>
-      
+
 //       {/* Other Packages Carousel */}
 //       <div className="container mx-auto p-4 md:p-8">
 //         <h2 className="text-3xl font-bold mb-4">Other Packages You Might Like</h2>
@@ -992,7 +992,7 @@ function PackageDetail() {
         {/* Image Carousel Section (Horizontal) */}
         <div className="w-full relative mb-8">
           <Carousel
-            plugins={[Autoplay({ delay: 3000, loop: true })]}
+            plugins={[Autoplay({ delay: 3000 })]}
             className="w-full"
           >
             <CarouselContent className="-ml-1">
@@ -1213,12 +1213,12 @@ function PackageDetail() {
             {isMounted && <IndiaMap />}
         </div>
       </div> */}
-      
+
       {/* Other Packages Carousel */}
       <div className="container mx-auto p-4 md:p-8">
         <h2 className="text-3xl font-bold mb-4">Other Packages You Might Like</h2>
         <Carousel
-          plugins={[Autoplay({ delay: 3000, loop: true })]}
+          plugins={[Autoplay({ delay: 3000 })]}
           className="w-full"
         >
           <CarouselContent className="p-7">
