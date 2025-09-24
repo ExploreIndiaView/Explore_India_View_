@@ -6,7 +6,7 @@ import 'leaflet/dist/leaflet.css';
 import L, { LatLngBounds } from 'leaflet';
 
 // Import the India GeoJSON file you provided
-import indiaBoundary from '../../services/india.geojson';
+import indiaBoundary from '../../services/india.json';
 
 const indiaData = indiaBoundary as any;
 
