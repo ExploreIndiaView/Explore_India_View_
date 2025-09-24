@@ -22,7 +22,7 @@ function page() {
     }, []);
     return (
         <div data-aos="fade-up">
-            <Landing IMAGES={CAROUSELIMAGE} />
+            <Landing/>
             <Disclaimer />
             <Packages />
             <Services />

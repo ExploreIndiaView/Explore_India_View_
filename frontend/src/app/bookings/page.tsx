@@ -37,7 +37,7 @@ function page() {
   }, []);
   return (
     <>
-      <Landing IMAGES={CAROUSELIMAGE} />
+      <Landing />
       <div className="container mx-auto px-4 py-8 min-h-[calc(100vh-120px)]">
         <h1 className="text-2xl md:text-4xl mb-5 font-semibold text-center font-serif">
           Bookings
