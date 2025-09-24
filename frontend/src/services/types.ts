@@ -6,12 +6,13 @@ export interface PACKAGETYPE {
   nights: number;
   Overview: string[] | undefined;
   Highlights?: string[] | undefined;
+  highlightsImages?: HighlightImage[]; 
   Inclusion: string[] | undefined;
   Exclusion: string[] | undefined;
   Itinerary?: Itinerary[] | undefined;
   FAQs: Itinerary[] | undefined;
   Price?: number;
-  subTitle?: string;  
+  subTitle?: string;
 
 }
 
@@ -127,6 +128,12 @@ export interface DAYTOUR {
   iamge: CarouselImage[];
   cities: CITIESTYPE[];
 }
+
+interface HighlightImage {
+  image: string;
+  content: string;
+}
+
 
 export type CITIESTYPE = {
   name: string;
