@@ -6,7 +6,7 @@ export interface PACKAGETYPE {
   nights: number;
   Overview: string[] | undefined;
   Highlight?: string[];    
-
+  duration?: string; 
   Highlights?: string[] | undefined;
   highlightsImages?: HighlightImage[];
   Inclusion: string[] | undefined;
