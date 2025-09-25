@@ -86,61 +86,6 @@ export const EXCLUSIVE_OFFERS = [
   },
 
 ];
-// // src/services/Options.ts
-// export const TOUR_SERVICES = [
-//   {
-//     __id: "flight-bookings", // Add this
-//     name: "Flight Bookings",
-//     icon: "Plane", // Updated icon for better match
-//     description: "Domestic and international flight bookings at competitive prices and flexible options.",
-//     highlights: ["Best price guarantee", "24/7 support", "Easy cancellation"],
-//     tag: "Popular",
-//   },
-//   {
-//     __id: "hotel-reservations", // Add this
-//     name: "Hotel Reservations",
-//     icon: "Hotel", // Updated icon for better match
-//     description: "Handpicked accommodations from budget-friendly to luxury resorts across India.",
-//     highlights: ["Verified properties", "Instant confirmation", "Special rates"],
-//     tag: "Trending",
-//   },
-//   {
-//     __id: "transportation", // Add this
-//     name: "Transportation",
-//     icon: "Headphones",
-//     description: "Reliable cab services, car rentals, and airport transfers for seamless travel.",
-//     highlights: ["Licensed drivers", "Clean vehicles", "GPS tracking"],
-//     tag: "Safe",
-//   },
-//   {
-//     __id: "custom-itineraries", // Add this
-//     name: "Custom Itineraries",
-//     icon: "Tag",
-//     description: "Personalized travel plans crafted by local experts based on your preferences.",
-//     highlights: ["Expert planning", "Local insights", "Flexible scheduling"],
-//     tag: "Exclusive",
-//   },
-//   {
-//     __id: "travel-consultation", // Add this
-//     name: "Travel Consultation",
-//     icon: "SlidersHorizontal",
-//     description: "Expert advice and support from planning to return, ensuring memorable experiences.",
-//     highlights: ["Personal advisor", "24/7 assistance", "Emergency support"],
-//     tag: "Premium",
-//   },
-//   {
-//     __id: "event-planning", // Add this
-//     name: "Event Planning",
-//     icon: "Award",
-//     description: "Special occasion travel including weddings, anniversaries, and corporate events.",
-//     highlights: ["Custom packages", "Group bookings", "Special arrangements"],
-//     tag: "Special",
-//   },
-// ];
-
-
-// src/services/Options.ts
-// ... other imports
 
 export const TOUR_SERVICES = [
   // {
@@ -287,50 +232,6 @@ export const TESTIMONIALS = [
   },
   // Add more testimonials here to fill the carousel
 ];
-// export const TOUR_SERVICES = [
-//   {
-//     name: "Flight Bookings",
-//     icon: "Flight",
-//     description: "Domestic and international flight bookings at competitive prices and flexible options.",
-//     highlights: ["Best price guarantee", "24/7 support", "Easy cancellation"],
-//     tag: "Popular",
-//   },
-//   {
-//     name: "Hotel Reservations",
-//     icon: "Hotel",
-//     description: "Handpicked accommodations from budget-friendly to luxury resorts across India.",
-//     highlights: ["Verified properties", "Instant confirmation", "Special rates"],
-//     tag: "Trending",
-//   },
-//   {
-//     name: "Transportation",
-//     icon: "Car",
-//     description: "Reliable cab services, car rentals, and airport transfers for seamless travel.",
-//     highlights: ["Licensed drivers", "Clean vehicles", "GPS tracking"],
-//     tag: "Safe",
-//   },
-//   {
-//     name: "Custom Itineraries",
-//     icon: "Map",
-//     description: "Personalized travel plans crafted by local experts based on your preferences.",
-//     highlights: ["Expert planning", "Local insights", "Flexible scheduling"],
-//     tag: "Exclusive",
-//   },
-//   {
-//     name: "Travel Consultation",
-//     icon: "Support",
-//     description: "Expert advice and support from planning to return, ensuring memorable experiences.",
-//     highlights: ["Personal advisor", "24/7 assistance", "Emergency support"],
-//     tag: "Premium",
-//   },
-//   {
-//     name: "Event Planning",
-//     icon: "Event",
-//     description: "Special occasion travel including weddings, anniversaries, and corporate events.",
-//     highlights: ["Custom packages", "Group bookings", "Special arrangements"],
-//     tag: "Special",
-//   },
-// ];
 
 export const WHY_CHOOSE_US_ITEMS = [
   {
@@ -2952,6 +2853,1021 @@ export const PACKAGES = [
   },
 ];
 
+
+export const tourPackages = {
+  northIndia: [
+    {
+      state: 'Jammu & Kashmir',
+      packages: [
+        {
+          id: 'JK-1',
+          name: 'Kashmir Valley Leisure',
+          duration: '5N / 6D',
+          destinations: 'Srinagar, Gulmarg, Pahalgam, Sonamarg',
+          highlights: ['Shikara ride on Dal Lake', 'Gulmarg Gondola', 'Mughal Gardens'],
+          price: {
+            sedan: '₹36,000 (approx)',
+            suv: '₹44,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Srinagar', description: 'Pickup from airport/railway. Shikara ride at Dal Lake & Mughal Gardens.' },
+            { day: 2, title: 'Srinagar to Gulmarg', description: 'Drive to Gulmarg. Enjoy Gulmarg Gondola (phase 1/2), optional skiing/ATV.' },
+            { day: 3, title: 'Gulmarg to Pahalgam', description: 'Drive to Pahalgam. Betaab Valley / Aru Valley short walks, pony rides.' },
+            { day: 4, title: 'Pahalgam Local', description: 'Morning village walk, river side picnic. Evening drive back to Srinagar.' },
+            { day: 5, title: 'Sonamarg Day-Trip', description: 'Excursion to Sonamarg. Glacier view, short hikes, river rafting (seasonal).' },
+            { day: 6, title: 'Departure', description: 'Local shopping, saffron/pashmina markets. Departure.' }
+          ]
+        },
+        {
+          id: 'JK-2',
+          name: 'Leh-Ladakh Adventure (High-Altitude)',
+          duration: '6N / 7D',
+          destinations: 'Leh, Nubra, Pangong',
+          highlights: ['Khardung La Pass', 'Camel safari at Nubra', 'Pangong Lake camping'],
+          price: {
+            sedan: '₹58,000 (approx)',
+            suv: '₹70,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Leh', description: 'Acclimatization day. Local walk to Leh Market & Shanti Stupa.' },
+            { day: 2, title: 'Leh to Nubra Valley', description: 'Drive over Khardung La Pass. Camel safari on sand dunes.' },
+            { day: 3, title: 'Nubra Local', description: 'Diskit monastery, village walk, local organic farm visit.' },
+            { day: 4, title: 'Nubra to Pangong Lake', description: 'Long drive to Pangong. Evening lakeside camping / stargazing.' },
+            { day: 5, title: 'Pangong to Leh', description: 'Return to Leh via Chang La. Evening Ladakhi cultural program (optional).' },
+            { day: 6, title: 'Leh Local', description: 'Short rafting (Zanskar river) or monastery tours (Thiksey, Hemis).' },
+            { day: 7, title: 'Departure', description: 'Departure.' }
+          ]
+        },
+        {
+          id: 'JK-3',
+          name: 'Kashmir Paradise Tour',
+          duration: '5N / 6D',
+          destinations: 'Srinagar, Gulmarg, Sonmarg, Pahalgam',
+          highlights: ['Shikara Ride on Dal Lake', 'Gulmarg Gondola', 'Betaab Valley & Aru Valley'],
+          price: {
+            perPerson: '₹22,500'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival at Srinagar', description: 'Shikara Ride on Dal Lake. Visit Mughal Gardens (Nishat Bagh, Shalimar Bagh).' },
+            { day: 2, title: 'Srinagar to Gulmarg', description: 'Drive to Gulmarg. Enjoy Gondola Ride to Kongdoori/Alpather Lake. Horse riding / Snow activities.' },
+            { day: 3, title: 'Gulmarg to Pahalgam', description: 'Drive via Pampore Saffron Fields & Avantipur ruins. Evening walk along Lidder River.' },
+            { day: 4, title: 'Pahalgam Valleys', description: 'Excursion to Betaab Valley & Aru Valley. Optional pony rides / rafting.' },
+            { day: 5, title: 'Pahalgam to Sonmarg & Srinagar', description: 'Day trip to Sonmarg. Return to Srinagar.' },
+            { day: 6, title: 'Departure', description: 'Breakfast & airport drop.' }
+          ]
+        },
+        {
+          id: 'JK-4',
+          name: 'Jammu & Kashmir Spiritual Tour',
+          duration: '4N / 5D',
+          destinations: 'Jammu, Katra, Vaishno Devi, Srinagar',
+          highlights: ['Mata Vaishno Devi Darshan', 'Shikara Ride in Srinagar', 'Shankaracharya Temple'],
+          price: {
+            perPerson: '₹16,500'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival at Jammu to Katra', description: 'Transfer to Katra. Evening leisure at local market.' },
+            { day: 2, title: 'Vaishno Devi Darshan', description: 'Early morning start trek to Mata Vaishno Devi Shrine. Return by evening.' },
+            { day: 3, title: 'Katra to Srinagar', description: 'Scenic drive through hills & tunnels. Evening Shikara Ride at Dal Lake.' },
+            { day: 4, title: 'Srinagar Sightseeing', description: 'Visit Shankaracharya Temple. Explore Mughal Gardens. Evening shopping at Lal Chowk.' },
+            { day: 5, title: 'Departure', description: 'Breakfast & airport drop.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'Ladakh',
+      packages: [
+        {
+          id: 'LDH-1',
+          name: 'Ladakh Heritage & Monastery Tour',
+          duration: '6N / 7D',
+          destinations: 'Leh, Sham Valley, Nubra, Pangong, Hemis',
+          highlights: ['Monastery visits (Hemis, Thiksey, Diskit)', 'Khardung La Pass drive', 'Camel Safari at Hunder', 'Pangong Lake sunset & sunrise'],
+          price: {
+            perPerson: '₹27,500'
+          },
+          itinerary: [
+            { day: 1, title: 'Leh Arrival', description: 'Acclimatization. Evening visit to Leh Market & Shanti Stupa.' },
+            { day: 2, title: 'Sham Valley Excursion', description: 'Magnetic Hill, Gurudwara Pathar Sahib, Sangam (Indus–Zanskar confluence). Visit Alchi & Likir Monastery.' },
+            { day: 3, title: 'Leh – Nubra Valley (via Khardung La)', description: 'Drive through Khardung La Pass. Visit Diskit Monastery. Evening camel safari in Hunder Sand Dunes.' },
+            { day: 4, title: 'Nubra – Pangong Lake (via Shyok)', description: 'Scenic drive along Shyok River. Reach Pangong Tso – evening sunset view.' },
+            { day: 5, title: 'Pangong – Leh (via Chang La)', description: 'Sunrise at Pangong. Return via Chang La Pass.' },
+            { day: 6, title: 'Monastery Circuit', description: 'Visit Hemis, Thiksey & Shey Monasteries.' },
+            { day: 7, title: 'Departure', description: 'Airport drop.' }
+          ]
+        },
+        {
+          id: 'LDH-2',
+          name: 'Ladakh Adventure & High-Altitude Expedition',
+          duration: '7N / 8D',
+          destinations: 'Leh, Nubra, Pangong, Tso Moriri, Hanle',
+          highlights: ['Quad biking & river rafting in Nubra', 'Offbeat Turtuk Village', 'Stargazing in Hanle', 'Tso Moriri Lake wildlife spotting'],
+          price: {
+            perPerson: '₹34,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Leh Arrival', description: 'Acclimatization. Evening market stroll.' },
+            { day: 2, title: 'Leh – Nubra Valley', description: 'Cross Khardung La. Quad biking in sand dunes.' },
+            { day: 3, title: 'Nubra Adventure', description: 'ATV ride, rafting at Shyok River. Explore Turtuk Village.' },
+            { day: 4, title: 'Nubra – Pangong Tso', description: 'Scenic offbeat route via Shyok. Evening camping at Pangong Lake.' },
+            { day: 5, title: 'Pangong – Hanle', description: 'Offbeat drive to Hanle (astronomy village, observatory).' },
+            { day: 6, title: 'Hanle – Tso Moriri', description: 'Drive through Changthang Plateau. Visit Tso Moriri Lake.' },
+            { day: 7, title: 'Tso Moriri – Leh', description: 'Drive back to Leh via Mahe Bridge.' },
+            { day: 8, title: 'Departure', description: 'Airport drop.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'Himachal Pradesh',
+      packages: [
+        {
+          id: 'HP-1',
+          name: 'Shimla - Manali Classic',
+          duration: '5N / 6D',
+          destinations: 'Shimla, Manali, Solang Valley',
+          highlights: ['Mall Road walk', 'Scenic drive via Mandi', 'Paragliding & zorbing in Solang Valley'],
+          price: {
+            sedan: '₹28,000',
+            suv: '₹34,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Shimla', description: 'Airport/Rail to hotel. Evening Mall Road walk, The Ridge.' },
+            { day: 2, title: 'Shimla local', description: 'Shimla to Kufri & Naldehra. Horse/pony rides, short hikes, apple orchard visit.' },
+            { day: 3, title: 'Shimla to Manali', description: 'Scenic drive via Mandi. Check-in Manali evening.' },
+            { day: 4, title: 'Manali Local', description: 'Hadimba Temple, Old Manali, Mall Road, river side cafe.' },
+            { day: 5, title: 'Solang Valley', description: 'Excursion to Solang Valley. Paragliding, zorbing, snow sports (seasonal).' },
+            { day: 6, title: 'Departure', description: 'Departure.' }
+          ]
+        },
+        {
+          id: 'HP-2',
+          name: 'Spiti & Lahaul Explorer',
+          duration: '6N / 7D',
+          destinations: 'Shimla, Kalpa, Tabo, Kaza, Chandratal',
+          highlights: ['High-altitude long drives', 'Key monastery visit', 'Stargazing at Chandratal'],
+          price: {
+            sedan: '₹48,000',
+            suv: '₹62,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Shimla to Kalpa', description: 'Scenic Kinnaur drive.' },
+            { day: 2, title: 'Kalpa to Tabo', description: 'Mountain passes.' },
+            { day: 3, title: 'Tabo to Kaza', description: 'Key monastery visit.' },
+            { day: 4, title: 'Kaza Local', description: 'Pin valley day trip, village homestays, high-altitude walks.' },
+            { day: 5, title: 'Kaza to Chandratal', description: 'Alpine lake, camping.' },
+            { day: 6, title: 'Chandratal to Manali', description: 'Tough mountain drive.' },
+            { day: 7, title: 'Departure', description: 'Departure.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'Punjab',
+      packages: [
+        {
+          id: 'PB-1',
+          name: 'Amritsar Heritage & Food Short Break',
+          duration: '1N / 2D',
+          destinations: 'Amritsar, Wagah',
+          highlights: ['Golden Temple darshan & langar', 'Wagah Border ceremony', 'Jallianwala Bagh & local food walk'],
+          price: {
+            sedan: '₹9,500'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Amritsar', description: 'Golden Temple darshan, Jallianwala Bagh. Evening Wagah Border ceremony.' },
+            { day: 2, title: 'Departure', description: 'Local shopping. Optional visit to Maharaja Ranjit Singh Museum. Departure.' }
+          ]
+        },
+        {
+          id: 'PB-2',
+          name: 'Rural Punjab & Cultural Immersion',
+          duration: '2N / 3D',
+          destinations: 'Amritsar, Patiala, Ludhiana',
+          highlights: ['Wagah Border', 'Qila Mubarak in Patiala', 'Village farm visit'],
+          price: {
+            sedan: '₹16,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Amritsar Local', description: 'Golden Temple & Wagah Border ceremony.' },
+            { day: 2, title: 'Amritsar to Patiala', description: 'Visit Qila Mubarak, Patiala peg tasting & folk show.' },
+            { day: 3, title: 'Patiala to Ludhiana', description: 'Drive to Ludhiana. Visit textile cluster & departure.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'Haryana',
+      packages: [
+        {
+          id: 'HR-1',
+          name: 'Kurukshetra & Heritage Short Break',
+          duration: '2N / 3D',
+          destinations: 'Kurukshetra, Panipat, Gurgaon',
+          highlights: ['Brahma Sarovar', 'Panipat battlefields & museum', 'Historical guided walk'],
+          price: {
+            sedan: '₹11,500'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Kurukshetra', description: 'Visit Brahma Sarovar, Kurukshetra Panorama.' },
+            { day: 2, title: 'Kurukshetra to Panipat', description: 'Panipat battlefields & museum.' },
+            { day: 3, title: 'Departure', description: 'Return / Departure.' }
+          ]
+        },
+        {
+          id: 'HR-2',
+          name: 'Morni Hills Weekend Adventure',
+          duration: '1N / 2D',
+          destinations: 'Morni Hills, Damdama Lake',
+          highlights: ['Trekking in Morni Hills', 'Boating at Damdama Lake', 'Camping & bonfire'],
+          price: {
+            sedan: '₹7,500'
+          },
+          itinerary: [
+            { day: 1, title: 'Drive to Morni Hills', description: 'Trekking, viewpoints, campsite bonfire.' },
+            { day: 2, title: 'Damdama Lake & Return', description: 'Activities like rock climbing & boating. Return.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'Uttarakhand',
+      packages: [
+        {
+          id: 'UT-1',
+          name: 'Char Dham (Express)',
+          duration: '7N / 8D',
+          destinations: 'Haridwar, Yamunotri, Gangotri, Kedarnath, Badrinath',
+          highlights: ['Ganga aarti', 'Pilgrim treks', 'Hot springs at Yamunotri'],
+          price: {
+            sedan: '₹46,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Haridwar Arrival', description: 'Ganga aarti.' },
+            { day: 2, title: 'Haridwar to Barkot', description: 'Long drive.' },
+            { day: 3, title: 'Yamunotri Day Return', description: 'Local treks/horse.' },
+            { day: 4, title: 'Gangotri Day', description: 'Proceed toward Kedarnath route.' },
+            { day: 5, title: 'Kedarnath', description: 'Trek/helicopter for temple darshan.' },
+            { day: 6, title: 'Badrinath', description: 'Drive to Badrinath.' },
+            { day: 7, title: 'Return', description: 'Return toward Haridwar.' },
+            { day: 8, title: 'Departure', description: 'Departure from Haridwar.' }
+          ]
+        },
+        {
+          id: 'UT-2',
+          name: 'Nainital – Ranikhet Hill Escape',
+          duration: '3N / 4D',
+          destinations: 'Nainital, Ranikhet, Bhimtal',
+          highlights: ['Boating on Naini Lake', 'Cable car ride', 'Pine forests of Ranikhet'],
+          price: {
+            sedan: '₹20,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Drive to Nainital', description: 'Evening Mall Road & lake boating.' },
+            { day: 2, title: 'Nainital Local', description: 'Naini Lake, cable car, snow view point.' },
+            { day: 3, title: 'Nainital to Ranikhet', description: 'Pine forests & sunset viewpoints.' },
+            { day: 4, title: 'Departure', description: 'Departure.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'Delhi',
+      packages: [
+        {
+          id: 'DL-1',
+          name: 'Old Delhi Heritage & Street Food Walk',
+          duration: '2N / 3D',
+          destinations: 'Old Delhi, New Delhi, Qutub area',
+          highlights: ['Rickshaw ride in Chandni Chowk', 'Red Fort guided tour', 'Qutub Minar & Mehrauli archeological park'],
+          price: {
+            sedan: '₹8,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival & Old Delhi', description: 'Rickshaw ride, Jama Masjid, Paranthe Wali Gali. Red Fort guided tour.' },
+            { day: 2, title: 'New Delhi & Qutub', description: 'India Gate, Rashtrapati Bhavan driveby, Qutub Minar & Mehrauli archeological park.' },
+            { day: 3, title: 'Departure', description: 'Shopping (Connaught Place/Khan Market) & Departure.' }
+          ]
+        },
+        {
+          id: 'DL-2',
+          name: 'Delhi Luxury & Shopping Weekend',
+          duration: '1N / 2D',
+          destinations: 'Connaught Place, Gurgaon, Hauz Khas',
+          highlights: ['Personalized shopper', 'Rooftop dining', 'Spa/relaxation'],
+          price: {
+            sedan: '₹11,500'
+          },
+          itinerary: [
+            { day: 1, title: 'Luxury Arrival', description: 'Personalized shopper, rooftop dining.' },
+            { day: 2, title: 'Luxury Experiences', description: 'Private museum/monument after-hours, spa/relaxation. Departure.' }
+          ]
+        },
+        {
+          id: 'DL-3',
+          name: 'Delhi Heritage & City Tour',
+          duration: '3N / 4D',
+          destinations: 'Red Fort, Qutub Minar, India Gate, Akshardham, Lotus Temple, Chandni Chowk',
+          highlights: ['Red Fort & Qutub Minar (UNESCO sites)', 'Akshardham Temple musical fountain', 'Shopping & food walk at Chandni Chowk'],
+          price: {
+            perPerson: '₹9,500'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival & New Delhi Sightseeing', description: 'Visit India Gate & Rashtrapati Bhavan. Evening Akshardham Temple musical fountain show.' },
+            { day: 2, title: 'Old Delhi Heritage Tour', description: 'Morning visit Red Fort & Rajghat. Afternoon food walk at Chandni Chowk.' },
+            { day: 3, title: 'South Delhi Tour', description: 'Morning Qutub Minar visit. Afternoon Lotus Temple. Evening shopping at Connaught Place.' },
+            { day: 4, title: 'Departure', description: 'Breakfast & Airport/Station drop.' }
+          ]
+        },
+        {
+          id: 'DL-4',
+          name: 'Delhi, Agra & Mathura Short Tour',
+          duration: '4N / 5D',
+          destinations: 'Delhi, Agra, Mathura, Vrindavan',
+          highlights: ['Taj Mahal & Agra Fort', 'Mathura Krishna Janmabhoomi Temple', 'Vrindavan Prem Mandir'],
+          price: {
+            perPerson: '₹14,500'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival in Delhi', description: 'Visit India Gate & Connaught Place.' },
+            { day: 2, title: 'Delhi Heritage Tour', description: 'Morning Red Fort & Rajghat. Afternoon Qutub Minar & Lotus Temple. Evening Akshardham Temple show.' },
+            { day: 3, title: 'Delhi to Agra', description: 'Morning drive to Agra. Visit Taj Mahal & Agra Fort.' },
+            { day: 4, title: 'Agra to Mathura & Vrindavan', description: 'Visit Krishna Janmabhoomi Temple. Evening Prem Mandir & ISKCON Temple.' },
+            { day: 5, title: 'Return to Delhi', description: 'Transfer to Delhi & Airport/Station drop.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'Uttar Pradesh',
+      packages: [
+        // No packages were provided specifically for UP outside the Delhi/Agra loop, but the state is listed.
+      ]
+    },
+    {
+      state: 'Rajasthan',
+      packages: [
+        {
+          id: 'RJ-1',
+          name: 'Royal Rajasthan Heritage Tour',
+          duration: '7N / 8D',
+          destinations: 'Jaipur, Jodhpur, Udaipur, Jaisalmer',
+          highlights: ['City Palace, Hawa Mahal', 'Mehrangarh Fort', 'Desert safari, camel rides'],
+          price: {
+            sedan: '₹72,000',
+            suv: '₹85,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Jaipur', description: 'City Palace, Hawa Mahal, Jantar Mantar.' },
+            { day: 2, title: 'Jaipur Local', description: 'Amber Fort, Elephant Ride, local bazaars.' },
+            { day: 3, title: 'Jaipur to Jodhpur', description: 'Mehrangarh Fort, Jaswant Thada.' },
+            { day: 4, title: 'Jodhpur to Jaisalmer', description: 'Jaisalmer Fort, Patwon Ki Haveli.' },
+            { day: 5, title: 'Desert Safari', description: 'Sam Sand Dunes, camel ride, Rajasthani cultural evening.' },
+            { day: 6, title: 'Jaisalmer to Udaipur', description: 'Lake Pichola, City Palace.' },
+            { day: 7, title: 'Udaipur Sightseeing', description: 'Jagdish Temple, Saheliyon Ki Bari, Fateh Sagar Lake.' },
+            { day: 8, title: 'Departure', description: 'Departure.' }
+          ]
+        },
+        {
+          id: 'RJ-2',
+          name: 'Desert & Wildlife Rajasthan',
+          duration: '6N / 7D',
+          destinations: 'Bikaner, Jaisalmer, Ranthambore',
+          highlights: ['Camel Breeding Farm', 'Ranthambore National Park safari', 'Sam Sand Dunes desert safari'],
+          price: {
+            sedan: '₹68,000',
+            suv: '₹80,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Bikaner', description: 'Junagarh Fort, Camel Breeding Farm.' },
+            { day: 2, title: 'Bikaner to Jaisalmer', description: 'Fort & Havelis.' },
+            { day: 3, title: 'Desert Safari', description: 'Sam Sand Dunes desert safari & Rajasthani folk dance.' },
+            { day: 4, title: 'Jaisalmer to Ranthambore', description: 'Evening at leisure.' },
+            { day: 5, title: 'Ranthambore National Park', description: 'Morning safari.' },
+            { day: 6, title: 'Ranthambore to Jaipur', description: 'Shopping & local sightseeing.' },
+            { day: 7, title: 'Departure', description: 'Departure.' }
+          ]
+        }
+      ]
+    }
+  ],
+  westIndia: [
+    {
+      state: 'Gujarat',
+      packages: [
+        {
+          id: 'GJ-1',
+          name: 'Gujarat Heritage & Culture',
+          duration: '6N / 7D',
+          destinations: 'Ahmedabad, Gir, Somnath, Dwarka',
+          highlights: ['Sabarmati Ashram', 'Asiatic lions in Gir National Park', 'Dwarkadhish Temple'],
+          price: {
+            sedan: '₹50,000',
+            suv: '₹60,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Ahmedabad', description: 'Sabarmati Ashram, Manek Chowk food walk.' },
+            { day: 2, title: 'Ahmedabad to Gir', description: 'Evening jungle safari.' },
+            { day: 3, title: 'Gir National Park', description: 'Morning safari.' },
+            { day: 4, title: 'Gir to Somnath', description: 'Somnath Temple, light & sound show.' },
+            { day: 5, title: 'Somnath to Dwarka', description: 'Dwarkadhish Temple, local market.' },
+            { day: 6, title: 'Dwarka to Porbandar', description: 'Kirti Mandir, Sudama Temple.' },
+            { day: 7, title: 'Departure', description: 'Departure.' }
+          ]
+        },
+        {
+          id: 'GJ-2',
+          name: 'Gujarat Coastal & Wildlife Escape',
+          duration: '5N / 6D',
+          destinations: 'Dwarka, Somnath, Gir, Diu',
+          highlights: ['Dwarkadhish Temple', 'Asiatic lions in Gir National Park', 'Diu Fort, Nagoa Beach'],
+          price: {
+            sedan: '₹48,000',
+            suv: '₹58,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Dwarka', description: 'Dwarkadhish Temple, Rukmini Temple.' },
+            { day: 2, title: 'Dwarka to Somnath', description: 'Somnath Temple, beach evening.' },
+            { day: 3, title: 'Somnath to Gir', description: 'Evening jungle safari.' },
+            { day: 4, title: 'Gir to Diu', description: 'Diu Fort, Nagoa Beach.' },
+            { day: 5, title: 'Diu Sightseeing', description: 'St. Paul’s Church, Lighthouse, leisure at beach.' },
+            { day: 6, title: 'Departure', description: 'Departure.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'Maharashtra',
+      packages: [
+        {
+          id: 'MH-1',
+          name: 'Mumbai – Pune – Lonavala Heritage & Hills',
+          duration: '4N / 5D',
+          destinations: 'Mumbai, Pune, Lonavala',
+          highlights: ['Gateway of India, Marine Drive', 'Shaniwar Wada', 'Bhushi Dam'],
+          price: {
+            sedan: '₹25,000',
+            suv: '₹32,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Mumbai', description: 'Gateway of India, Marine Drive, Colaba Market.' },
+            { day: 2, title: 'Mumbai to Pune', description: 'Shaniwar Wada, Aga Khan Palace.' },
+            { day: 3, title: 'Pune to Lonavala', description: 'Bhushi Dam, Lion’s Point, local market.' },
+            { day: 4, title: 'Lonavala to Mumbai', description: 'Elephanta Caves excursion.' },
+            { day: 5, title: 'Departure', description: 'Departure.' }
+          ]
+        },
+        {
+          id: 'MH-2',
+          name: 'Mumbai – Goa Coastal & Beaches Escape',
+          duration: '5N / 6D',
+          destinations: 'Mumbai, Goa',
+          highlights: ['Gateway of India, Marine Drive', 'North & South Goa beaches', 'Water sports'],
+          price: {
+            sedan: '₹38,000',
+            suv: '₹46,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Mumbai', description: 'City sightseeing.' },
+            { day: 2, title: 'Mumbai to Goa', description: 'Long drive to Goa, evening at leisure.' },
+            { day: 3, title: 'North Goa', description: 'Fort Aguada, Baga Beach, Chapora Fort.' },
+            { day: 4, title: 'South Goa', description: 'Colva Beach, Cabo de Rama Fort.' },
+            { day: 5, title: 'Leisure Day', description: 'Optional water sports / spice plantation tour.' },
+            { day: 6, title: 'Departure', description: 'Departure.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'Goa',
+      packages: [
+        // No packages were provided specifically for Goa outside the Mumbai loop, but the state is listed.
+      ]
+    }
+  ],
+  southIndia: [
+    {
+      state: 'Kerala',
+      packages: [
+        {
+          id: 'KL-1',
+          name: 'Kerala Backwaters & Hills',
+          duration: '5N / 6D',
+          destinations: 'Kochi, Munnar, Thekkady, Alleppey, Kovalam',
+          highlights: ['Houseboat backwaters cruise', 'Tea plantations in Munnar', 'Periyar Wildlife Sanctuary boat safari'],
+          price: {
+            sedan: '₹38,000',
+            suv: '₹46,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Kochi Arrival', description: 'Fort Kochi, Chinese Fishing Nets, Mattancherry Palace.' },
+            { day: 2, title: 'Kochi to Munnar', description: 'Tea plantations, waterfalls.' },
+            { day: 3, title: 'Munnar Local', description: 'Eravikulam NP, Mattupetty Dam, spice gardens.' },
+            { day: 4, title: 'Munnar to Thekkady', description: 'Periyar Wildlife Sanctuary boat safari, Kathakali performance.' },
+            { day: 5, title: 'Thekkady to Alleppey', description: 'Houseboat backwaters cruise, overnight on houseboat.' },
+            { day: 6, title: 'Alleppey to Kovalam & Departure', description: 'Beach leisure & departure.' }
+          ]
+        },
+        {
+          id: 'KL-2',
+          name: 'Kerala Short Escape',
+          duration: '3N / 4D',
+          destinations: 'Kochi, Munnar, Alleppey',
+          highlights: ['Houseboat experience', 'Tea plantation visit', 'Fort Kochi sightseeing'],
+          price: {
+            sedan: '₹21,500',
+            suv: '₹27,500'
+          },
+          itinerary: [
+            { day: 1, title: 'Kochi Arrival', description: 'Fort Kochi, local sightseeing.' },
+            { day: 2, title: 'Kochi to Munnar', description: 'Tea gardens, Mattupetty Dam.' },
+            { day: 3, title: 'Munnar to Alleppey', description: 'Houseboat cruise, backwaters.' },
+            { day: 4, title: 'Departure', description: 'Departure.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'Tamil Nadu',
+      packages: [
+        {
+          id: 'TN-1',
+          name: 'Temple & Heritage Trail',
+          duration: '5N / 6D',
+          destinations: 'Chennai, Mahabalipuram, Pondicherry, Thanjavur, Madurai, Rameshwaram',
+          highlights: ['Brihadeeswarar Temple', 'Meenakshi Temple', 'Shore Temple at Mahabalipuram'],
+          price: {
+            sedan: '₹35,000',
+            suv: '₹42,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Chennai', description: 'Marina Beach, Kapaleeshwarar Temple, evening food walk.' },
+            { day: 2, title: 'Chennai to Pondicherry', description: 'Mahabalipuram (Shore Temple, Pancha Rathas). Pondicherry French colony.' },
+            { day: 3, title: 'Pondicherry to Thanjavur', description: 'Brihadeeswarar Temple, Thanjavur Palace.' },
+            { day: 4, title: 'Thanjavur to Madurai', description: 'Meenakshi Temple, Thirumalai Nayak Palace.' },
+            { day: 5, title: 'Madurai to Rameshwaram', description: 'Rameshwaram excursion.' },
+            { day: 6, title: 'Departure', description: 'Departure.' }
+          ]
+        },
+        {
+          id: 'TN-2',
+          name: 'Ooty & Kodaikanal Hills',
+          duration: '4N / 5D',
+          destinations: 'Ooty, Kodaikanal',
+          highlights: ['Nilgiri Mountain Railway', 'Ooty Botanical Garden', 'Kodaikanal Lake'],
+          price: {
+            sedan: '₹29,000',
+            suv: '₹36,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Chennai to Ooty', description: 'Scenic drive via Nilgiris.' },
+            { day: 2, title: 'Ooty Local', description: 'Botanical Garden, Ooty Lake, optional toy train ride.' },
+            { day: 3, title: 'Ooty to Kodaikanal', description: 'Kodaikanal Lake, Coaker’s Walk, Bryant Park.' },
+            { day: 4, title: 'Kodaikanal Local', description: 'Pillar Rocks, Bear Shola Falls, local market.' },
+            { day: 5, title: 'Departure', description: 'Departure.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'Karnataka',
+      packages: [
+        {
+          id: 'KA-1',
+          name: 'Mysore – Coorg – Kabini Nature & Heritage',
+          duration: '5N / 6D',
+          destinations: 'Bangalore, Mysore, Coorg, Kabini',
+          highlights: ['Mysore Palace', 'Dubare Elephant Camp', 'Kabini wildlife safari'],
+          price: {
+            sedan: '₹34,000',
+            suv: '₹41,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Bangalore', description: 'Local sightseeing.' },
+            { day: 2, title: 'Bangalore to Mysore', description: 'Mysore Palace, Brindavan Gardens.' },
+            { day: 3, title: 'Mysore to Coorg', description: 'Abbey Falls, Raja’s Seat, coffee plantation.' },
+            { day: 4, title: 'Coorg Local', description: 'Dubare Elephant Camp, local village visit.' },
+            { day: 5, title: 'Coorg to Kabini', description: 'Evening wildlife safari.' },
+            { day: 6, title: 'Kabini to Bangalore & Departure', description: 'Departure.' }
+          ]
+        },
+        {
+          id: 'KA-2',
+          name: 'Hampi Heritage Tour',
+          duration: '3N / 4D',
+          destinations: 'Bangalore, Hospet, Hampi',
+          highlights: ['UNESCO World Heritage Sites', 'Coracle ride on Tungabhadra River', 'Virupaksha Temple'],
+          price: {
+            sedan: '₹22,000',
+            suv: '₹28,500'
+          },
+          itinerary: [
+            { day: 1, title: 'Bangalore to Hospet', description: 'Arrival & overnight stay.' },
+            { day: 2, title: 'Hampi Sightseeing', description: 'Virupaksha Temple, Vittala Temple, Coracle ride.' },
+            { day: 3, title: 'Hampi Local', description: 'Local exploration & Light & Sound show.' },
+            { day: 4, title: 'Departure', description: 'Departure.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'Andhra Pradesh',
+      packages: [
+        {
+          id: 'AP-1',
+          name: 'Tirupati Balaji Yatra',
+          duration: '2N / 3D',
+          destinations: 'Chennai, Tirupati',
+          highlights: ['Sri Venkateswara Temple darshan'],
+          price: {
+            sedan: '₹13,500',
+            suv: '₹18,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Chennai to Tirupati', description: 'Check-in, evening darshan of Sri Venkateswara Temple.' },
+            { day: 2, title: 'Tirumala Darshan', description: 'Tirumala Darshan, local sightseeing, local market.' },
+            { day: 3, title: 'Departure', description: 'Departure.' }
+          ]
+        },
+        {
+          id: 'AP-2',
+          name: 'Vizag – Araku Valley Nature & Culture',
+          duration: '4N / 5D',
+          destinations: 'Vizag, Araku Valley, Borra Caves',
+          highlights: ['Borra Caves', 'Tribal village visit', 'Coffee plantation tour'],
+          price: {
+            sedan: '₹27,000',
+            suv: '₹33,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Vizag', description: 'Local sightseeing (RK Beach, Kailasagiri).' },
+            { day: 2, title: 'Vizag to Araku Valley', description: 'Visit Borra Caves, coffee plantation tour.' },
+            { day: 3, title: 'Araku Local', description: 'Tribal village visit, local museum.' },
+            { day: 4, title: 'Araku to Vizag', description: 'Waterfall excursion in Araku, return to Vizag.' },
+            { day 5, title: 'Departure', description: 'Departure.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'Telangana',
+      packages: [
+        {
+          id: 'TG-1',
+          name: 'Hyderabad Heritage & Culture',
+          duration: '3N / 4D',
+          destinations: 'Hyderabad',
+          highlights: ['Charminar', 'Golconda Fort', 'Ramoji Film City'],
+          price: {
+            sedan: '₹19,000',
+            suv: '₹25,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Hyderabad', description: 'Charminar, Laad Bazaar, Chowmahalla Palace.' },
+            { day: 2, title: 'Hyderabad Local', description: 'Golconda Fort, Salarjung Museum, Birla Mandir.' },
+            { day: 3, title: 'Ramoji Film City', description: 'Full-day visit.' },
+            { day: 4, title: 'Departure', description: 'Departure.' }
+          ]
+        }
+      ]
+    }
+  ],
+  eastIndia: [
+    {
+      state: 'West Bengal',
+      packages: [
+        {
+          id: 'WB-1',
+          name: 'Kolkata & Sundarbans Heritage Tour',
+          duration: '4N / 5D',
+          destinations: 'Kolkata, Sundarbans',
+          highlights: ['Howrah Bridge, Victoria Memorial', 'Mangrove safari in Sundarbans', 'Cultural program'],
+          price: {
+            sedan: '₹27,000',
+            suv: '₹34,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Kolkata', description: 'Howrah Bridge, Victoria Memorial, Park Street.' },
+            { day: 2, title: 'Kolkata City Tour', description: 'Dakshineswar Kali Temple, Belur Math, Marble Palace.' },
+            { day: 3, title: 'Kolkata to Sundarbans', description: 'Boat transfer, village walk, cultural program.' },
+            { day: 4, title: 'Sundarbans Safari', description: 'Sajnekhali, Dobanki, Sudhanyakhali – wildlife spotting.' },
+            { day: 5, title: 'Departure', description: 'Return to Kolkata, departure.' }
+          ]
+        },
+        {
+          id: 'WB-2',
+          name: 'Darjeeling & Kalimpong Hill Escape',
+          duration: '5N / 6D',
+          destinations: 'Darjeeling, Kalimpong',
+          highlights: ['Tiger Hill sunrise', 'Tea Estates', 'Monasteries'],
+          price: {
+            sedan: '₹36,000',
+            suv: '₹44,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Siliguri/NJP to Darjeeling', description: 'Transfer to Darjeeling.' },
+            { day: 2, title: 'Darjeeling Local', description: 'Tiger Hill sunrise, Ghoom Monastery, Tea Estates.' },
+            { day: 3, title: 'Mirik Excursion', description: 'Mirik excursion, Chowrasta evening leisure.' },
+            { day: 4, title: 'Darjeeling to Kalimpong', description: 'Durpin Dara, Deolo Hill, local market.' },
+            { day: 5, title: 'Kalimpong Leisure', description: 'Leisure & shopping.' },
+            { day: 6, title: 'Departure', description: 'Transfer to NJP/Bagdogra, departure.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'Odisha',
+      packages: [
+        {
+          id: 'OD-1',
+          name: 'Odisha Golden Triangle',
+          duration: '4N / 5D',
+          destinations: 'Bhubaneswar, Puri, Konark, Chilika',
+          highlights: ['Lingaraj Temple', 'Jagannath Temple', 'Konark Sun Temple', 'Chilika Lake boat ride'],
+          price: {
+            sedan: '₹26,000',
+            suv: '₹32,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Bhubaneswar Sightseeing', description: 'Temples (Lingaraj, Mukteshwar, Rajarani), State Museum.' },
+            { day: 2, title: 'Bhubaneswar to Puri', description: 'Jagannath Temple, Puri Beach, Pipli village.' },
+            { day: 3, title: 'Puri to Konark', description: 'Sun Temple, Chandrabhaga Beach, Odissi Dance show.' },
+            { day: 4, title: 'Chilika Lake Excursion', description: 'Boat ride, Dolphin spotting, return to Bhubaneswar.' },
+            { day: 5, title: 'Departure', description: 'Departure.' }
+          ]
+        },
+        {
+          id: 'OD-2',
+          name: 'Tribal Odisha & Simlipal Safari',
+          duration: '5N / 6D',
+          destinations: 'Bhubaneswar, Simlipal Tiger Reserve, Koraput',
+          highlights: ['Jungle safari in Simlipal', 'Tribal villages', 'Waterfalls'],
+          price: {
+            sedan: '₹34,000',
+            suv: '₹42,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Bhubaneswar City Tour', description: 'Temples & museum.' },
+            { day: 2, title: 'Bhubaneswar to Simlipal', description: 'Long drive.' },
+            { day: 3, title: 'Simlipal Safari', description: 'Barehipani & Joranda waterfalls, tribal villages.' },
+            { day: 4, title: 'Return to Bhubaneswar', description: 'Night transfer to Koraput.' },
+            { day: 5, title: 'Koraput Tribal Experience', description: 'Duduma waterfalls, Kolab Dam.' },
+            { day: 6, title: 'Departure', description: 'Departure.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'Bihar',
+      packages: [
+        {
+          id: 'BR-1',
+          name: 'Buddhist Circuit',
+          duration: '5N / 6D',
+          destinations: 'Patna, Bodhgaya, Rajgir, Nalanda, Vaishali',
+          highlights: ['Mahabodhi Temple, Bodhi Tree', 'Nalanda ancient university ruins', 'Ashokan Pillar in Vaishali'],
+          price: {
+            sedan: '₹33,000',
+            suv: '₹41,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Patna', description: 'City tour – Golghar, Takht Sri Patna Sahib.' },
+            { day: 2, title: 'Patna to Bodh Gaya', description: 'Mahabodhi Temple, Bodhi Tree.' },
+            { day: 3, title: 'Rajgir – Nalanda', description: 'Hot springs, ancient university ruins.' },
+            { day: 4, title: 'Vaishali', description: 'Ashokan Pillar, archeological site.' },
+            { day: 5, title: 'Leisure in Patna', description: 'Local food walk.' },
+            { day: 6, title: 'Departure', description: 'Departure.' }
+          ]
+        },
+        {
+          id: 'BR-2',
+          name: 'Patna Heritage Short Trip',
+          duration: '2N / 3D',
+          destinations: 'Patna, Nalanda, Rajgir',
+          highlights: ['Golghar', 'Patna Museum', 'Nalanda & Rajgir excursion'],
+          price: {
+            sedan: '₹14,000',
+            suv: '₹18,500'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Patna', description: 'City sightseeing – Golghar, Gandhi Maidan, Patna Museum.' },
+            { day: 2, title: 'Nalanda & Rajgir', description: 'Excursion.' },
+            { day: 3, title: 'Departure', description: 'Departure.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'North East India',
+      packages: [
+        // No packages were provided for NE India, but the region is listed.
+      ]
+    }
+  ],
+  centralIndia: [
+    {
+      state: 'Madhya Pradesh',
+      packages: [
+        {
+          id: 'MP-1',
+          name: 'Khajuraho – Orchha – Gwalior Heritage Tour',
+          duration: '5N / 6D',
+          destinations: 'Khajuraho, Orchha, Gwalior, Bhopal, Sanchi',
+          highlights: ['UNESCO temples of Khajuraho', 'Jahangir Mahal', 'Gwalior Fort', 'Sanchi Stupa'],
+          price: {
+            sedan: '₹32,000',
+            suv: '₹39,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Khajuraho', description: 'Western Group of Temples, evening light & sound show.' },
+            { day: 2, title: 'Khajuraho to Orchha', description: 'Jahangir Mahal, Chaturbhuj Temple.' },
+            { day: 3, title: 'Orchha to Gwalior', description: 'Gwalior Fort, Saas Bahu Temples.' },
+            { day: 4, title: 'Gwalior to Bhopal', description: 'Upper Lake, Taj-ul-Masajid.' },
+            { day: 5, title: 'Bhopal to Sanchi', description: 'Visit Sanchi Stupa, back to Bhopal.' },
+            { day: 6, title: 'Departure', description: 'Departure.' }
+          ]
+        },
+        {
+          id: 'MP-2',
+          name: 'Bandhavgarh & Kanha Wildlife Safari',
+          duration: '4N / 5D',
+          destinations: 'Jabalpur, Bandhavgarh, Kanha',
+          highlights: ['Tiger spotting', 'Jungle safaris', 'Tribal village visit'],
+          price: {
+            sedan: '₹40,000',
+            suv: '₹48,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival Jabalpur to Bandhavgarh', description: 'Evening safari.' },
+            { day: 2, title: 'Bandhavgarh National Park', description: 'Morning safari.' },
+            { day: 3, title: 'Bandhavgarh to Kanha', description: 'Evening safari.' },
+            { day: 4, title: 'Kanha National Park', description: 'Morning safari, nature trails, tribal village visit.' },
+            { day: 5, title: 'Departure', description: 'Departure.' }
+          ]
+        }
+      ]
+    }
+  ],
+  unionTerritories: [
+    {
+      state: 'Andaman & Nicobar Islands',
+      packages: [
+        {
+          id: 'AN-1',
+          name: 'Andaman Heritage & Island Discovery Tour',
+          duration: '4N / 5D',
+          destinations: 'Port Blair, Ross Island, Cellular Jail, Havelock, Neil Island',
+          highlights: ['Cellular Jail light & sound show', 'Snorkeling at North Bay', 'Sunset at Radhanagar Beach'],
+          price: {
+            perPerson: '₹19,500'
+          },
+          itinerary: [
+            { day: 1, title: 'Port Blair Arrival', description: 'Visit Cellular Jail & Evening Light & Sound Show.' },
+            { day: 2, title: 'Ross & North Bay Islands', description: 'Boat ride to Ross Island. Snorkeling at North Bay.' },
+            { day: 3, title: 'Havelock Island', description: 'Early morning ferry to Havelock. Relax & sunset at Radhanagar Beach.' },
+            { day: 4, title: 'Neil Island Excursion', description: 'Ferry to Neil Island. Visit Natural Bridge, Bharatpur Beach. Evening ferry back to Port Blair.' },
+            { day: 5, title: 'Departure', description: 'Shopping at Aberdeen Bazaar. Drop at Port Blair Airport.' }
+          ]
+        },
+        {
+          id: 'AN-2',
+          name: 'Andaman Adventure & Water Sports Tour',
+          duration: '5N / 6D',
+          destinations: 'Port Blair, Havelock, Neil, Baratang, Jolly Buoy',
+          highlights: ['Scuba Diving at Havelock', 'Kayaking through mangroves', 'Limestone Caves at Baratang'],
+          price: {
+            perPerson: '₹24,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Port Blair Arrival', description: 'Evening leisure at Corbyn’s Cove Beach.' },
+            { day: 2, title: 'Scuba Diving at Havelock', description: 'Ferry to Havelock Island. Scuba diving session at Elephant Beach.' },
+            { day: 3, title: 'Kayaking & Trekking', description: 'Sunrise kayaking through mangroves. Short trek to Elephant Beach. Evening ferry back to Port Blair.' },
+            { day: 4, title: 'Baratang Island', description: 'Early morning road trip to Baratang Island. Visit Limestone Caves & Mud Volcano.' },
+            { day: 5, title: 'Jolly Buoy Island', description: 'Glass-bottom boat ride, snorkeling, coral reef viewing.' },
+            { day: 6, title: 'Departure', description: 'Airport drop.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'Lakshadweep',
+      packages: [
+        {
+          id: 'LD-1',
+          name: 'Lakshadweep Heritage & Island Discovery Tour',
+          duration: '4N / 5D',
+          destinations: 'Agatti, Bangaram, Kavaratti',
+          highlights: ['Heritage visit: Ujra Mosque', 'Local cultural shows', 'Coral beach walk'],
+          price: {
+            perPerson: '₹22,000'
+          },
+          itinerary: [
+            { day: 1, title: 'Agatti Arrival', description: 'Flight arrival at Agatti Island. Evening leisure walk at lagoon.' },
+            { day: 2, title: 'Bangaram Island Excursion', description: 'Boat ride to Bangaram. Explore untouched beaches, coral walk. Return to Agatti.' },
+            { day: 3, title: 'Kavaratti Exploration', description: 'Boat transfer to Kavaratti Island. Visit Marine Aquarium & Ujra Mosque. Local cultural show.' },
+            { day: 4, title: 'Minicoy Island Excursion', description: 'Boat to Minicoy. Visit lighthouse, traditional dance shows. Evening beach relaxation.' },
+            { day: 5, title: 'Departure', description: 'Return to Agatti & airport drop.' }
+          ]
+        },
+        {
+          id: 'LD-2',
+          name: 'Lakshadweep Adventure & Water Sports Tour',
+          duration: '5N / 6D',
+          destinations: 'Agatti, Kadmat, Bangaram, Kalpeni',
+          highlights: ['Scuba diving & snorkeling', 'Parasailing, windsurfing, kayaking', 'Beach barbecue'],
+          price: {
+            perPerson: '₹27,500'
+          },
+          itinerary: [
+            { day: 1, title: 'Agatti Arrival', description: 'Airport pickup & resort check-in. Evening kayaking session.' },
+            { day: 2, title: 'Scuba Diving at Kadmat Island', description: 'Speed boat transfer to Kadmat. Scuba diving, snorkeling, glass-bottom boat rides.' },
+            { day: 3, title: 'Bangaram Adventure', description: 'Water sports: windsurfing, parasailing. Lagoon exploration via catamaran.' },
+            { day: 4, title: 'Kalpeni Island', description: 'Kayaking, stand-up paddling, reef walking. Visit Kalpeni Lagoon for marine life spotting.' },
+            { day: 5, title: 'Agatti Back & Leisure', description: 'Return to Agatti. Evening cultural program with local cuisine.' },
+            { day: 6, title: 'Departure', description: 'Airport drop.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'Puducherry',
+      packages: [
+        {
+          id: 'PY-1',
+          name: 'Puducherry Heritage & Spiritual Tour',
+          duration: '3N / 4D',
+          destinations: 'Puducherry City, Auroville, Mahabalipuram',
+          highlights: ['Aurobindo Ashram & Matrimandir', 'French Quarter architecture', 'UNESCO heritage site: Mahabalipuram Shore Temple'],
+          price: {
+            perPerson: '₹12,500'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival in Puducherry', description: 'Stroll at Rock Beach & French Quarter.' },
+            { day: 2, title: 'Heritage Walk & Aurobindo Ashram', description: 'Visit Sri Aurobindo Ashram, Manakula Vinayagar Temple. French Colony Heritage Walk.' },
+            { day: 3, title: 'Auroville & Mahabalipuram Excursion', description: 'Visit Auroville & Matrimandir. Drive to Mahabalipuram (Shore Temple, Five Rathas).' },
+            { day: 4, title: 'Departure', description: 'Shopping for handicrafts. Drop at airport/station.' }
+          ]
+        },
+        {
+          id: 'PY-2',
+          name: 'Puducherry Adventure & Coastal Experience Tour',
+          duration: '4N / 5D',
+          destinations: 'Puducherry, Paradise Beach, Chunnambar, Karaikal, Yanam',
+          highlights: ['Water sports at Paradise Beach', 'Scuba diving & snorkeling', 'Coastal exploration: Karaikal & Yanam'],
+          price: {
+            perPerson: '₹17,500 (est.)'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival in Puducherry', description: 'Evening at Promenade Beach.' },
+            { day: 2, title: 'Paradise Beach & Chunnambar Backwaters', description: 'Boat ride to Paradise Beach. Water sports. Leisure at Chunnambar Backwaters.' },
+            { day: 3, title: 'Adventure Activities', description: 'Scuba diving / snorkeling (seasonal). ATV rides. French café hopping in White Town.' },
+            { day: 4, title: 'Karaikal & Yanam Excursion', description: 'Drive to Karaikal Beach. Visit Yanam (French colonial town).' },
+            { day: 5, title: 'Departure', description: 'Shopping for leather goods. Drop at airport/station.' }
+          ]
+        }
+      ]
+    },
+    {
+      state: 'Daman & Diu & Dadra Nagar Haveli',
+      packages: [
+        {
+          id: 'DN-1',
+          name: 'Daman Beach & Heritage Tour',
+          duration: '3N / 4D',
+          destinations: 'Nani Daman, Jampore Beach, Devka Beach, Diu Fort',
+          highlights: ['Relax at Jampore Beach', 'Portuguese Diu Fort', 'St. Paul’s Church'],
+          price: {
+            perPerson: '₹12,500'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival in Daman', description: 'Pickup & transfer to Daman. Visit Nani Daman Fort & St. Jerome Fort. Evening leisure at Devka Beach.' },
+            { day: 2, title: 'Daman Beaches', description: 'Morning at Jampore Beach. Visit Dominican Monastery Ruins. Evening seafood dinner.' },
+            { day: 3, title: 'Diu Excursion', description: 'Visit Diu Fort & St. Paul’s Church. Relax at Nagoa Beach. Return to Daman.' },
+            { day: 4, title: 'Departure', description: 'Breakfast, checkout & drop at station/airport.' }
+          ]
+        },
+        {
+          id: 'DN-2',
+          name: 'Silvassa & Tribal Culture Tour',
+          duration: '4N / 5D',
+          destinations: 'Silvassa, Vanganga Lake, Deer Park, Dudhni Lake, Tribal Museum',
+          highlights: ['Vanganga Lake boating', 'Deer Park wildlife spotting', 'Dudhni Lake water sports'],
+          price: {
+            perPerson: '₹14,500'
+          },
+          itinerary: [
+            { day: 1, title: 'Arrival at Silvassa', description: 'Pickup & transfer to Silvassa. Visit Vanganga Lake Garden. Evening cultural walk.' },
+            { day: 2, title: 'Silvassa Wildlife & Culture', description: 'Morning at Deer Park & Lion Safari. Visit Tribal Cultural Museum.' },
+            { day: 3, title: 'Dudhni Lake Excursion', description: 'Dudhni Lake boating, kayaking, jet skiing. Sunset at lakeside.' },
+            { day: 4, title: 'Silvassa Heritage Walk', description: 'Visit Church of Our Lady of Piety. Explore local tribal handicraft markets.' },
+            { day: 5, title: 'Departure', description: 'Breakfast, checkout & drop at station/airport.' }
+          ]
+        }
+      ]
+    }
+  ]
+};
 // Add a new array for the "Explore Popular Regions" section
 export const POPULAR_REGIONS = [
   {
