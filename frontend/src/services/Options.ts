@@ -3505,7 +3505,7 @@ export const tourPackages = {
             { day: 2, title: 'Vizag to Araku Valley', description: 'Visit Borra Caves, coffee plantation tour.' },
             { day: 3, title: 'Araku Local', description: 'Tribal village visit, local museum.' },
             { day: 4, title: 'Araku to Vizag', description: 'Waterfall excursion in Araku, return to Vizag.' },
-            { day 5, title: 'Departure', description: 'Departure.' }
+            { day: 5, title: 'Departure', description: 'Departure.' }
           ]
         }
       ]
