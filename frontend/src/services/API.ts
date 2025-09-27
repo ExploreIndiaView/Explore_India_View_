@@ -1,1 +1,1 @@
-export const API_URL = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:8000";
+export const API_URL = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:8000" || "https://explore-india-view-7nc8.onrender.com";
